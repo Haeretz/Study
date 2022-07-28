@@ -61,6 +61,8 @@ window.alert("메세지");
 
 ### HTML DOM 요소를 이용한 innerHTML 프로퍼티
 가장 많이 사용되는 방법으로 document 객체의 getElementByID() 나 getElementsByTagName() 등의 메소드를 사용하여 HTML요소를 선택하고,
-innerHTML 
+innerHTML 프로퍼티를 이용하면 선택된 HTML요소의 내용(content)이나 속성(attribute)값 등을 손쉽게 변경할 수 있다
+
+
 
 

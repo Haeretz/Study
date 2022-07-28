@@ -95,13 +95,13 @@ HTML 요소를 다루기 위해서는 우선 해당 요소를 선택해야 한�
   document.write(title);  <br/><br/>
   ---
   ### DOM요소의 내용변경
-  HTML DOM을 이용하면 HTML 요소의 내용(content)이나 속성값 등을 손쉽게 변경할 수 있다  <br/>
+  /* HTML DOM을 이용하면 HTML 요소의 내용(content)이나 속성값 등을 손쉽게 변경할 수 있다  <br/>
   ex) var str = document.getElementById("test");  <br/>
    str.innerHTML = "이문장으로 바꿉니다";  <br/>
   HTML 요소의 속성 이름을 이용하면 속성값도 변경할 수 있다  <br/>
   ex) var link = document.getElementById("link");     // 아이디가 "link"인 요소를 선택함    <br/>
   link.href = "/javascript/intro"; // 해당 요소의 href 속성값을 변경  <br/>
-  link.innerHTML = "자바스크립트 수업 바로가기!";  // 해당 요소의 내용을 변경함 <br/>
+  link.innerHTML = "자바스크립트 수업 바로가기!";  // 해당 요소의 내용을 변경함 <br/> */
   ---
   ### DOM 요소의 스타일 변경
   HTML DOM을 이용하면 HTML 요소의 스타일도 변경가능하다 <br/><br/>

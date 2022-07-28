@@ -103,7 +103,13 @@ HTML 요소를 다루기 위해서는 우선 해당 요소를 선택해야 한�
   ex) var link = document.getElementById("link");     // 아이디가 "link"인 요소를 선택함    <br/>
   link.href = "/javascript/intro"; // 해당 요소의 href 속성값을 변경  <br/>
   link.innerHTML = "자바스크립트 수업 바로가기!";  // 해당 요소의 내용을 변경함 <br/>
- 
+  ---
+  ### DOM 요소의 스타일 변경
+  HTML DOM을 이용하면 HTML 요소의 스타일도 변경가능하다<br/><br/>
+    ex) var str = document.getElementById("text"); <br/>      // 아이디가 "text"인 요소를 선택함
+        function changRedColor() { str.style.color = "red";}<br/>    //해당 요소의 글자색을 빨간색으로 변경
+        function changeBlackColor() { str.style.color="black";}<br/><br/> //해당 요소의 글자색을 검정색으로 변경
+  
 
 
 

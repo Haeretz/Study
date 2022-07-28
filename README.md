@@ -57,11 +57,14 @@ Camel Case 방식을 사용한다
 
 ### Window.alert() 메소드
 가장 간단한 출력 방법으로 브라우저와 별도의 대화상자를 띄운다
-window.alert("메세지");</br>
+  window.alert("메세지");
 
 ### HTML DOM 요소를 이용한 innerHTML 프로퍼티
 가장 많이 사용되는 방법으로 document 객체의 getElementByID() 나 getElementsByTagName() 등의 메소드를 사용하여 HTML요소를 선택하고,
 innerHTML 프로퍼티를 이용하면 선택된 HTML요소의 내용(content)이나 속성(attribute)값 등을 손쉽게 변경할 수 있다
+
+### DOM 요소
+HTML
 
 
 

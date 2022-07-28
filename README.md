@@ -37,4 +37,30 @@ HTML로는 웹의 내용을 작성하고, CSS로는 웹을 디자인하고, Java
 ### 식별자(Identifier)
 변수나 함수의 이름을 작성할 때 사용하는 이름
 JavaScript에서는 영문자, 숫자, '_', '$'만 사용가능하다
+Camel Case 방식을 사용한다
+### 키워드
+몇몇 단어들을 특별한 용도로 사용하기 위해 예약어로 지정해 놨다
+- var -> 변수의 정의를 위한 키워드
+- function -> 함수의 정의를 위한 키워드
+### 주석
+* 한 줄 주석 : // 주석문
+* 여러 줄 주석 : /* 주석문 */
+* 여러 줄 주석은 중첩이 안된다
+* 여러 줄 주석안에 한 줄 주석은 넣을 수 있다
+
+## JavaScript 출력
+---
+1. Window.alert() 메소드
+2. HTML DOM 요소를 이용한 innerHTML 프로퍼티
+3. document.write() 메소드
+4. console.log() 메소드
+
+### Window.alert() 메소드
+가장 간단한 출력 방법으로 브라우저와 별도의 대화상자를 띄운다
+window.alert("메세지");
+
+### HTML DOM 요소를 이용한 innerHTML 프로퍼티
+가장 많이 사용되는 방법으로 document 객체의 getElementByID() 나 getElementsByTagName() 등의 메소드를 사용하여 HTML요소를 선택하고,
+innerHTML 
+
 

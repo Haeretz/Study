@@ -56,7 +56,7 @@ Camel Case 방식을 사용한다
 4. console.log() 메소드
 
 ### Window.alert() 메소드
-가장 간단한 출력 방법으로 브라우저와 별도의 대화상자를 띄운다
+가장 간단한 출력 방법으로 브라우저와 별도의 대화상자를 띄운다  
   window.alert("메세지");
 
 ### HTML DOM 요소를 이용한 innerHTML 프로퍼티

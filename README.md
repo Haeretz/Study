@@ -96,16 +96,16 @@ HTML 요소를 다루기 위해서는 우선 해당 요소를 선택해야 한�
   ---
  ### DOM 요소의 내용변경
   ---
-  HTML DOM을 이용하면 HTML 요소의 내용(content)이나 속성값 등을 손쉽게 변경할 수 있다
-  ex) var str = document.getElementById("text");
-      str.innerHTML = "이 문장으로 바뀌었습니다!";
+  HTML DOM을 이용하면 HTML 요소의 내용(content)이나 속성값 등을 손쉽게 변경할 수 있다 <br/><br/>
+  ex) var str = document.getElementById("text");<br/>
+        str.innerHTML = "이 문장으로 바뀌었습니다!";<br/><br/>
   
   ### DOM 요소의 스타일 변경
   ---
-  HTML DOM을 이용하면 HTML 요소의 스타일도 변경가능하다 
-    ex) var str = document.getElementById("text");   // 아이디가 "text"인 요소를 선택함
-        function changRedColor() { str.style.color = "red";}     //해당 요소의 글자색을 빨간색으로 변경
-        function changeBlackColor() { str.style.color="black";} //해당 요소의 글자색을 검정색으로 변경
+  HTML DOM을 이용하면 HTML 요소의 스타일도 변경가능하다 <br/><br/>
+    ex) var str = document.getElementById("text");   <br/>
+          function changRedColor() { str.style.color = "red";}  
+          function changeBlackColor() { str.style.color="black";} <br/><br/>
   
 
 

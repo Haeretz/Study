@@ -67,7 +67,7 @@ innerHTML 프로퍼티를 이용하면 선택된 HTML요소의 내용(content)�
 HTML 요소를 다루기 위해서는 우선 해당 요소를 선택해야 한다
 1. HTML 태그 이름을 이용한 선택<br/>  
   getElementsByTagName() 메소드는 HTML태그 이름을 이용하여 HTML요소를 선택한다  <br/><br/>
-  ex) var selectedItem = document.getElementsByTagName("li");  // 모든 <li>요소를 선택함<br/>
+  ex) var selectedItem = document.getElementsByTagName("li");  // 모든 '<li>' 요소를 선택함<br/>
       for(var i=0; i<selectedItem.length;i++){  <br/>
         selectedItem.item.style.color = "red";}   // 선택된 모든 요소의 텍스트 색상을 변경함 <br/><br/>
 2. 아이디를 이용한 선택  <br/>

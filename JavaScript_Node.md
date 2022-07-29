@@ -394,4 +394,50 @@ nodeValue 프로퍼티를 사용해 텍스트 노드의 값을 변경할 수 있
       
      document.getElementByTagName("p")[0].setAttribute("class", "para"); }
      
-     // 클래스가 설정되면 해당 클래스에 설정되어 있던 스타일이 자동으로 
+     // 클래스가 설정되면 해당 클래스에 설정되어 있던 스타일이 자동으로 적용됨
+     
+---
+
+### 요소노드의 교체
+
+replaceChilde() 메소드를 사용하면 기존의 요소 노드르 새로운 요소노드로 교체할 수 있다
+
+(원형)
+
+교체할노드 = 부모노드.replaceChild(새로운 자식노드, 기존자식노드);
+
+(예제)
+
+        var parent = document.getElementById("parent");
+        
+        var first = document.getElementById("first");
+        
+        var third = documnet.getElementById("third");
+        
+        function changeNode() {
+        
+          parent.replaceChild(third, first);   //first요소를 삭제하고 third요소를 삽입함
+        
+        }
+     
+---
+
+### 텍스트 노드의 데이터 교체
+
+replacceData()를 사용하면 텍스트 노드의 데이터를 바꿀 수 있다
+
+(원형)
+
+택스트노드.replaceData(오프셋, 교체할문자수, 새로운 데이터);
+* 오프셋 : 0부터 시작하고, 기존 텍스트 데이터의 몇번째 문자부터 교체할지를 전달한다
+* 교체할 문자수 : 기존 텍스트 노드의 데이터로부터 교체할 총 문자 수를 전달
+* 새로운 데이터 : 새로이 삽입할 텍스트 데이터를 전달한다
+
+(예제)
+
+        var text = document.getElementById("text").firstChild;
+        
+        function changeText() {
+        
+          text.replaceData(7,4,"저녁 7");  // 텍스트 노드의 7번째 문자부터 4개의 문자를 "저녁 7"로 교체함
+        }

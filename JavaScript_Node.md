@@ -193,9 +193,192 @@ function printLastChild() {
 >   var newItem = document.getElementById("item");
 >   parent.insertBefore(newItem,criteriaItem); //해당 노드를 기준이 되는 자식 노드의 바로 앞에 추가함
 
+---
 
+> insertData() 메소드
+> 텍스트 노드의 텍스트 데이터에 새로운 텍스트를 추가한다
+> (원형)
+> 텍스트노드.insertData(오프셋, 새로운데이터);
+> 1. 오프셋 : 오프셋 값은 0부터 시작하며, 기존 데이터의 몇 번째 위치부터 추가할지를 전달한다
+> 2. 새로운 데이터 : 새로이 삽입할 텍스트 데이터를 전달한다
+> (예제)
+> var text = document.getElementById("text").firstChild;
+> function appendText() {
+>  text.insertData(6," 나른한");} //텍스트 노드의 6번째 문자부터 "나른한" 이란 데이터를 추가함
 
+---
 
+### 노드의 생성
 
+생성할 노드의 종류에 따라 다음과 같은 메소드를 사용할 수 있다
+1. createElement()
+2. createAttribute()
+3. createTextNode()
 
+---
 
+### 요소 노드의 생성
+
+createElement()를 사용해 새로운 요소 노드를 만들수 있다
+
+(예제)
+
+    function createNode() {
+
+　   var criteriaNode = document.getElementById("text");
+    
+　   var newNode = document.getElementById("p"); //새로운 p요소를 생성함
+    
+　   newNode.innerHTML = "새로운 단락입니다."; 
+    
+　   document.body.insertBefore(newNode, criteriaNode);} //새로운 요소를 기준이 되는 요소 바로 앞에 추가함
+ 
+ ---
+ 
+ ### 속성노드의 생성
+ 
+ createAttribute()를 사용하여 새로운 속성노드를 만들수 있다
+ 
+ 만약 같은 이름의 속성 노드가 존재하면 기존의 속성 노드는 새로운 속성노드롤 대체된다
+ 
+ 이미 존재하는 요소노드에 속성노드를 생성하고자 할 때에는 setAttribute()로 할 수 있다
+ 
+ (예제)
+ 
+    function createNode() {
+ 
+   　var text = document.getElementById("text");
+  
+  　 var newAttribute = document.createAttribute("style"); // 새로운 style 속성 노드를 생성
+   
+  　 newAttribute.value = "color:red";  
+    
+     text.setAttributeNode(newAttribute); }  // 해당 요소의 속성 노드로 추가함
+     
+---
+
+### 텍스트 노드의 생성
+
+createTextNode()를 이용해 새로운 텍스트 노드를 만들 수 있다.
+
+(예제)
+
+     function createNode() {
+     
+       var elementNode = document.getElementById("text");
+       
+       var newText = document.createTextNode("새로운 텍스트 노드를 생성"); //새로운 텍스트 노드를 생성
+       
+       elementNode.appendChild(newText); }  // 해당 요소의 자식 노드로 추가함
+       
+---
+
+### 노드의 제거
+
+1. removeChild()
+2. removeAttribute()
+
+---
+
+### removeChild() 
+
+자식 노드 리스트에서 특정 자식 노드를 제거한다
+
+이 메소드는 노드가 제거되면 제거된 노드를 반환한다
+
+노드가 제거될 때 그 노드의 자식들도 다 같이 제거된다
+
+(예제)
+
+    var parent =document.getElementById("list");
+    
+    var removeItem = document.getElementById("item");
+    
+    parent.removeChild(removedItem); //지정된 요소를 삭제함 
+    
+---
+
+### removeAttribute() 
+
+속성의 이름을 이용해 특정 속성노드를 제거한다
+
+(예제)
+
+    var text= document.getElementById("text");
+    text.removeAttribute("style");    //해당 요소의 style 속성을 제거
+    
+---
+
+### 노드의 복제
+
+cloneNode()를 사용하면 특정 노드를 복제할 수 있다
+
+기존의 존재하는 노드와 똑같은 노드를 생성해 반환한다
+
+(원형)
+
+복제할 노드.cloneNode(자식노드복제여부);
+
+(예제)
+
+    function cloneElement() {
+    
+     var parent = document.getElementBtId("list");
+     
+     var originItem = document.getElementById("item");
+     
+     parent.appendChild(originItem.cloneNode(true)); }  // 해당 노드를 복제하여 리스트의 맨 마지막에 추가
+     
+---
+
+## 노드의 조작 
+
+---
+
+### 노드의 값 변경 
+
+nodeValue프로퍼티를 사용하면 특정 노드의 값을 변경할 수 있다
+
+setAttribute()는 속성노드의 값을 변경할 수 있다
+
+---
+
+### 요소 노드의 텍스트 
+
+요소 노드의 자신이 직접 만든 텍스트값을 가지지 않는다
+
+요소노드의 텍스트는 요소 노드의 자식 노드인 텍스트노드에 저장된다
+
+따라서 요소 노드의 텍스트 값을 확인하거나 변경하고자 할 때는 요소 노드에 포함된 텍스트 노드에 접근해야 한다
+
+---
+
+### 텍스트 노드의 값 변경
+
+nodeValue 프로퍼티를 사용해 텍스트 노드의 값을 변경할 수 있다
+
+(예제)
+
+    var para = document.getElementById(text");
+    
+    function changeText() {
+    
+     para.firstChild.nodeValue = "텍스트 변경 완료"); } 
+     
+---
+
+### 속성 노드의 값 변경
+
+속성노드는 nodeValue 프로퍼티, setAttribute() 메소드를 사용하여 값을 변경할 수 있다
+
+(예제)
+
+     var para;
+     
+     function changeAttribute() {
+     
+      // 모든 p 요소둥에서 첫 번쩨 요소에 클래스 속성값으로 para를 설정함 
+      
+     document.getElementByTagName("p")[0].setAttribute("class", "para"); }
+     
+     // 클래스가 설정되면 해당 클래스에 설정되어 있던 스타일이 자동으로 

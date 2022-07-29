@@ -16,11 +16,11 @@ HTML 요소를 다루기 위해서는 우선 해당 요소를 선택해야 한�
 2. 아이디를 이용한 선택
   
   getElementById() 메소드는 아이디를 이용하여 HTML 요소를 선택한다
-  ``
+  ```
   ex) var selectedItem = document.getElementById("even"); // 아이디가 "even"인 요소를 선택함
   
   selectedItem.stlye.color = "red"; //선택된 요소의 텍스트 색상을 변경함
-  ``
+  ```
 3. 클래스를 이용한 선택 
   getElementByName() 메소드는 HTML요소의 name속성을 이용하여 HTML 요소를 선택한다 
   ```

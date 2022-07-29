@@ -63,6 +63,38 @@ Camel Case 방식을 사용한다
 가장 많이 사용되는 방법으로 document 객체의 getElementByID() 나 getElementsByTagName() 등의 메소드를 사용하여 HTML요소를 선택하고,
 innerHTML 프로퍼티를 이용하면 선택된 HTML요소의 내용(content)이나 속성(attribute)값 등을 손쉽게 변경할 수 있다
 
+### document.write() 메소드
+
+웹페이지가 로딩될 때 실행되며느 웹페이지에 가장 먼저 데이터를 출력한다
+따라서 documnet.wrtie()는 대부분 테스트나 디버깅을 위해 사용된다
+
+(예제)
+
+        <script>
+            document.write(4*5);
+        </script>
+        
+하지만 웹 페이지의 모든 내용이 로딩된 후에 document.write() 메소드가 실행되면 웹 페이지 내에 먼저 로딩된 모든 데이터를 지우고 자신의 데이터를 출력한다
+따라서 document.write() 메소드를 테스트 이외의 용도로 사용할 때 주의해야 한다
+
+(예제)
+
+        <button onclick="document.write(4*5)">버튼을 눌러보세요</button>
+        
+---
+
+### console.log() 메소드
+
+웹 브라우저의 콘솔을 통해 데이터를 출력해 준다 브라우저에서 F12를 눌러 콘솔창을 띄울 수 있다
+
+(예제)
+
+        <p> F12를 눌러서 콘솔화면에서 결과를 확인</p>
+        <script>
+          console.log(4*5);
+        </script>
+        
+
 
   
   

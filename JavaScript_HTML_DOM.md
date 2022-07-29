@@ -4,25 +4,31 @@
 HTML 요소를 다루기 위해서는 우선 해당 요소를 선택해야 한다
 1. HTML 태그 이름을 이용한 선택<br/>  
   
-  getElementsByTagName() 메소드는 HTML태그 이름을 이용하여 HTML요소를 선택한다  <br/><br/>
+  getElementsByTagName() 메소드는 HTML태그 이름을 이용하여 HTML요소를 선택한다  
   ```
-  ex) var selectedItem = document.getElementsByTagName("li");  // 모든 'li' 요소를 선택함<br/>
-  for(var i=0; i<selectedItem.length;i++){  <br/>
-  selectedItem.item.style.color = "red";}   // 선택된 모든 요소의 텍스트 색상을 변경함 <br/><br/>
+  ex)
+  var selectedItem = document.getElementsByTagName("li");  // 모든 'li' 요소를 선택함
+  
+  for(var i=0; i<selectedItem.length;i++){
+  
+  selectedItem.item.style.color = "red";}   // 선택된 모든 요소의 텍스트 색상을 변경함 
   ```
 2. 아이디를 이용한 선택
   
   getElementById() 메소드는 아이디를 이용하여 HTML 요소를 선택한다
   ``
-  ex) var selectedItem = document.getElementById("even"); // 아이디가 "even"인 요소를 선택함<br/>
-  selectedItem.stlye.color = "red"; //선택된 요소의 텍스트 색상을 변경함  <br/><br/>
+  ex) var selectedItem = document.getElementById("even"); // 아이디가 "even"인 요소를 선택함
+  
+  selectedItem.stlye.color = "red"; //선택된 요소의 텍스트 색상을 변경함
   ``
 3. 클래스를 이용한 선택 
   getElementByName() 메소드는 HTML요소의 name속성을 이용하여 HTML 요소를 선택한다 
   ```
   ex) 
   var selectedItem = document.getElementByClassName("odd"); //클래스가 odd인 모든 요소를 선택함
+  
   for(var i=0; i<selectedItem.length;i++) {                                                
+  
     selectedItem.item(i).style.color="red"}; //선택된 모든 요소의 택스트 색상을 변경함  
   ```
 4. name 속성을 이용한 선택
@@ -31,7 +37,8 @@ HTML 요소를 다루기 위해서는 우선 해당 요소를 선택해야 한�
   ```
   ex)
     var selectedItem = document.getElementsByName("first"); //name 속성 값이 first인 모든 요소를 선택함 
-      for(var i=0; i<selectedItem(i).style.color = "red"; //선택된 모든 요소의 텍스트 색상을 변경함.  
+    
+    for(var i=0; i<selectedItem(i).style.color = "red"; //선택된 모든 요소의 텍스트 색상을 변경함.  
   ```
 5. CSS 선택자를 이용한 선택  
 

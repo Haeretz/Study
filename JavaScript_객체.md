@@ -150,3 +150,4 @@ ex)
     
     Object.getPrototypeOf(obj);  // 객체의 프로토타입을 반환함
 ```
+

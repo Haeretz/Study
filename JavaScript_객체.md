@@ -120,15 +120,33 @@ ex)
     documnet.write("올해는" + day.getFullYear() + "년 입니다.");
 ```
 자바스크립트에서 제공하는 생성자를 사용할 수 있고, 사용자가 직접 객체 생성자 함수를 작성하여 사용할 수 도 있다
-[프로토타입](
 
+[프로토타입](https://github.com/Haeretz/JavaScript_Study/blob/main/JavaScript_%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85.md)
 
+---
+### Object.create() 메소드를 이용한 객체의 생성
 
+object.create()메소드는 지정된 프로토 타입객체와 프로퍼티를 가지고 새로운 객체를 만들어 준다
 
+문법
 
-
+   Object.create(프로토타입객체[, 새로운객체의프로퍼티1, 새로운객체의프로퍼티2, ...]);
+   
+   Object.create()의 첫 번째 인수로는 프로토타입으로 사용할 객체를 전달한다
+   두 번째 인수로는 새로운 객체의 추가할 프로퍼티 정보를 전달한다
+```   
+ex) 
+    var obj = Object.create(null, {   //null 프로토타입을 이용해 새로운 객체를 만듦
     
-
-
-
-
+      x: { value=100, enumerable: true},
+      
+      y: { value=200, enumerable: true}
+      
+    });
+    
+    obj.x;
+    
+    obj.y;
+    
+    Object.getPrototypeOf(obj);  // 객체의 프로토타입을 반환함
+```

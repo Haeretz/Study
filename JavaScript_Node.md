@@ -78,9 +78,9 @@ getElementByTagName() 메소드는 특정 태그 이름을 가지는 모든 요�
 
 (예제)
 
-　document.getElementById("document").innerHTML = document.childNodes[1].nodeName;   //HTML
+  　 document.getElementById("document").innerHTML = document.childNodes[1].nodeName;   //HTML
 
-　document.getElementById("HTML")=document.childNodes[1].childeNodes[0].nodeName;    //HEAD
+   　document.getElementById("HTML")=document.childNodes[1].childeNodes[0].nodeName;    //HEAD
 
 >nodeValue
 
@@ -95,9 +95,9 @@ getElementByTagName() 메소드는 특정 태그 이름을 가지는 모든 요�
 
 　// 아이디가 "heading"인 요소가 첫 번째 자식 노드의 노드값을 선택함
  
- 　var headingText = document.getElementById("heading").firstChild.nodeValue;
+ 　  var headingText = document.getElementById("heading").firstChild.nodeValue;
   
-  　document.getElementById("text1").innerHTML = headingText;
+  　 document.getElementById("text1").innerHTML = headingText;
    
    　document.getElementById("text1").firstChild.nodeValue = headingText;
     
@@ -113,12 +113,13 @@ getElementByTagName() 메소드는 특정 태그 이름을 가지는 모든 요�
 > |문서노드|9|
 
 // 아이디가 "heading"인 요소가 첫 번째 자식 노드의 노드값을 선택함
-　var headingType = document.getElementById("heading").firstChild.nodeType;
+
+     var headingType = document.getElementById("heading").firstChild.nodeType;
  
- 　document.getElementById("head").innerHTML = headingType; //3
+ 　  document.getElementById("head").innerHTML = headingType; //3
   
-  　document.getElementById("document").innerHTML= document.nodeType; //9
-   
+  　 document.getElementById("document").innerHTML= document.nodeType; //9
+    
 ---
 ### 빈 택스트 노드의 처리
 
@@ -131,9 +132,9 @@ getElementByTagName() 메소드는 특정 태그 이름을 가지는 모든 요�
 
 (예제)
 
-　  var lastNode;
+　   var lastNode;
 
-function findLastChild(parentNode) {
+    function findLastChild(parentNode) {
 
     lastNode = parentNode.lastChild;
 
@@ -145,7 +146,7 @@ function findLastChild(parentNode) {
 
 }
 
-function printLastChild() {
+    function printLastChild() {
 
     var parentNode = document.getElementById("parentNode");
 
@@ -173,10 +174,14 @@ function printLastChild() {
 > appendChild() 
 > 새로운 노드를 해당 노드의 자식 노드리스트의 맨 마지막에 추가한다
 > (예제)
-> function appendNode() {
->   var parent = document.getElementById("list"); //아이디가 'list'인 요소를 선택함
->   var newitem = document.getElementById("item"); //아이디가 'item'인 요소를 선택함
->   parent.appendChild(newItem); }                  //해당 요소의 맨 마지막 자식 노드로 추가함
+    
+    function appendNode() {
+    
+    var parent = document.getElementById("list"); //아이디가 'list'인 요소를 선택함
+    
+    var newitem = document.getElementById("item"); //아이디가 'item'인 요소를 선택함
+    
+    parent.appendChild(newItem); }                  //해당 요소의 맨 마지막 자식 노드로 추가함
 
 ---
 
@@ -187,11 +192,16 @@ function printLastChild() {
 > 새로운 자식 노드 : 자식 노드 리스트에 새롭게 추가할 자식 노드를 전달한다
 > 기준 자식 노드 : 새로운 노드를 삽입할 때 기준이 되는 노드로 이 노드 바로 앞에 새로운 노드가 추가된다
 > (예제)
-> function appendNode() {
->   var parent = document.getElementById("list");
->   var criteriaItem = document.getElementById("criteria");
->   var newItem = document.getElementById("item");
->   parent.insertBefore(newItem,criteriaItem); //해당 노드를 기준이 되는 자식 노드의 바로 앞에 추가함
+ 
+    function appendNode() {
+    
+    var parent = document.getElementById("list");
+    
+    var criteriaItem = document.getElementById("criteria");
+    
+    var newItem = document.getElementById("item");
+    
+    parent.insertBefore(newItem,criteriaItem); //해당 노드를 기준이 되는 자식 노드의 바로 앞에 추가함
 
 ---
 
@@ -202,9 +212,12 @@ function printLastChild() {
 > 1. 오프셋 : 오프셋 값은 0부터 시작하며, 기존 데이터의 몇 번째 위치부터 추가할지를 전달한다
 > 2. 새로운 데이터 : 새로이 삽입할 텍스트 데이터를 전달한다
 > (예제)
-> var text = document.getElementById("text").firstChild;
-> function appendText() {
->  text.insertData(6," 나른한");} //텍스트 노드의 6번째 문자부터 "나른한" 이란 데이터를 추가함
+
+    var text = document.getElementById("text").firstChild;
+    
+    function appendText() {
+    
+    text.insertData(6," 나른한");} //텍스트 노드의 6번째 문자부터 "나른한" 이란 데이터를 추가함
 
 ---
 

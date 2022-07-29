@@ -63,6 +63,8 @@ Camel Case 방식을 사용한다
 가장 많이 사용되는 방법으로 document 객체의 getElementByID() 나 getElementsByTagName() 등의 메소드를 사용하여 HTML요소를 선택하고,
 innerHTML 프로퍼티를 이용하면 선택된 HTML요소의 내용(content)이나 속성(attribute)값 등을 손쉽게 변경할 수 있다
 
+  [HTML DOM](https://github.com/Haeretz/JavaScript_Study/blob/main/JavaScript_HTML_DOM.md)
+
 ### document.write() 메소드
 
 웹페이지가 로딩될 때 실행되며느 웹페이지에 가장 먼저 데이터를 출력한다

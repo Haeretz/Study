@@ -35,3 +35,9 @@
 [JavaScript 적용](https://github.com/Haeretz/JavaScript_Study/blob/main/Javascript_%EC%A0%81%EC%9A%A9.md)
 
 ---
+
+## JavaScript 타입변환
+
+[JavaScript 타입변환](https://github.com/Haeretz/JavaScript_Study/blob/main/%ED%83%80%EC%9E%85%EB%B3%80%ED%99%98.md)
+
+---

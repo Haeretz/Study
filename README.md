@@ -8,7 +8,7 @@
 
 ## JavaScript HTML DOM
 
-[HTML DOM](https://github.com/Haeretz/JavaScript_Study/blob/main/JavaScript_HTML_DOM.md)
+[HTML DOM](https://github.com/Haeretz/Study/blob/main/JavaScript/HTML_DOM.md)
 
 ---
 

@@ -14,7 +14,7 @@
 
 ## JavaScript Node
 
-[JavaScript Node](https://github.com/Haeretz/JavaScript_Study/blob/main/JavaScript_Node.md)
+[JavaScript Node](https://github.com/Haeretz/Study/blob/main/Node.md)
 
 ---
 

@@ -38,6 +38,6 @@
 
 ## JavaScript 타입변환
 
-[JavaScript 타입변환](https://https://github.com/Haeretz/Study/blob/main/JavaScript/%ED%83%80%EC%9E%85%EB%B3%80%ED%99%98.md)
+[JavaScript 타입변환](https://github.com/Haeretz/Study/blob/main/JavaScript/%ED%83%80%EC%9E%85%EB%B3%80%ED%99%98.md)
 
 ---

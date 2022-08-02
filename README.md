@@ -26,7 +26,7 @@
 
 ## JavaScript 프로토타입
 
-[JavaScript 프로토타입](https://https://github.com/Haeretz/Study/blob/main/JavaScript/%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85.md)
+[JavaScript 프로토타입](https://github.com/Haeretz/Study/blob/main/JavaScript/%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85.md)
 
 ---
 

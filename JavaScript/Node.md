@@ -3,7 +3,7 @@
 HTML DOM은 노드(node)라고 불리는 계층적 단위에 정보를 저장한다   
 HTML DOM은 이러한 노드를 정의하고, 그들 사이의 관계를 설명해 주는 역할을 한다  
 
-![node구조](https://github.com/Haeretz/JavaScript_Study/blob/main/node%EA%B5%AC%EC%A1%B0.jpg)
+![node구조](https://github.com/Haeretz/Study/blob/main/JavaScript/node%EA%B5%AC%EC%A1%B0.jpg)
 
 HTML 문서의 정보는 노드트리라고 불리는 계층적 구조에 저장된다
 노드트리는 최상위 레벨인 루트 노드부터 시작하여, 가장 낮은 레벨인 텍스트 노드까지 뻗어 내려간다
@@ -27,7 +27,7 @@ W3C HTML DOM 표준에 따르면, HTML문서의 모든 것은 노드이다
 
 노드트리의 모든 노드는 서로 계층적 관계를 맺고 있다
 
-![노드구조2](https://github.com/Haeretz/JavaScript_Study/blob/main/node%EA%B5%AC%EC%A1%B02.jpg)
+![노드구조2](https://github.com/Haeretz/Study/blob/main/JavaScript/node%EA%B5%AC%EC%A1%B02.jpg)
 
 * 최상위 레벨인 루트노드를 제외한 모든 노드는 부모노드를 단 하나만 가질 수 있다
 * 모든 요소노드는 자식노드를 가질 수 있다
